@@ -1,45 +1,69 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import Clientes from './components/Clientes'
 import Contas from './components/Contas'
 import Transferencia from './components/Transferencia'
 import Investimentos from './components/Investimentos'
 import Emprestimos from './components/Emprestimos'
 import Pix from './components/Pix'
+import './styles/global.css'
 
-export default function App() {
-  const [aba, setAba] = useState('clientes')
+function App() {
+  const [abaAtiva, setAbaAtiva] = useState('clientes')
+
+  const abas = [
+    { id: 'clientes', label: 'Clientes' },
+    { id: 'contas', label: 'Contas' },
+    { id: 'transferencia', label: 'Transferências' },
+    { id: 'investimentos', label: 'Investimentos' },
+    { id: 'emprestimos', label: 'Empréstimos' },
+    { id: 'pix', label: 'PIX' }
+  ]
+
+  const renderizarConteudo = () => {
+    switch (abaAtiva) {
+      case 'clientes':
+        return <Clientes />
+      case 'contas':
+        return <Contas />
+      case 'transferencia':
+        return <Transferencia />
+      case 'investimentos':
+        return <Investimentos />
+      case 'emprestimos':
+        return <Emprestimos />
+      case 'pix':
+        return <Pix />
+      default:
+        return <Clientes />
+    }
+  }
 
   return (
-    <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
-      <h1>Sistema Bancário</h1>
-      
-      <div style={{ marginBottom: '20px' }}>
-        <button onClick={() => setAba('clientes')} style={{ marginRight: '10px' }}>
-          Clientes
-        </button>
-        <button onClick={() => setAba('contas')} style={{ marginRight: '10px' }}>
-          Contas
-        </button>
-        <button onClick={() => setAba('transferencia')} style={{ marginRight: '10px' }}>
-          Transferência
-        </button>
-        <button onClick={() => setAba('investimentos')} style={{ marginRight: '10px' }}>
-          Investimentos
-        </button>
-        <button onClick={() => setAba('emprestimos')} style={{ marginRight: '10px' }}>
-          Empréstimos
-        </button>
-        <button onClick={() => setAba('pix')}>
-          PIX
-        </button>
-      </div>
+    <div className="app-container">
+      <header className="app-header fade-in">
+        <h1>Sistema Bancário Digital</h1>
+        <p>Gerencie suas finanças de forma simples e segura</p>
+      </header>
 
-      {aba === 'clientes' && <Clientes />}
-      {aba === 'contas' && <Contas />}
-      {aba === 'transferencia' && <Transferencia />}
-      {aba === 'investimentos' && <Investimentos />}
-      {aba === 'emprestimos' && <Emprestimos />}
-      {aba === 'pix' && <Pix />}
+      <nav className="tabs-container fade-in">
+        <div className="tabs">
+          {abas.map(aba => (
+            <button
+              key={aba.id}
+              className={`tab-button ${abaAtiva === aba.id ? 'active' : ''}`}
+              onClick={() => setAbaAtiva(aba.id)}
+            >
+              {aba.label}
+            </button>
+          ))}
+        </div>
+      </nav>
+
+      <main className="content-area fade-in">
+        {renderizarConteudo()}
+      </main>
     </div>
   )
 }
+
+export default App
