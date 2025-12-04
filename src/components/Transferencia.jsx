@@ -1,33 +1,32 @@
 import React, { useEffect, useState } from 'react'
-import { apiGet, apiPost } from '../api/api'
+import { apiPost } from '../api/api'
+import { useApp } from '../contexts/AppContext'
 
 export default function Transferencia() {
-  const [contas, setContas] = useState([])
+  const { contas, loadContas } = useApp()
   const [origem, setOrigem] = useState('')
   const [destino, setDestino] = useState('')
   const [valor, setValor] = useState('')
 
-  async function load() {
-    try {
-      const data = await apiGet('/api/contas')
-      setContas(data || [])
-    } catch (e) {
-      console.error(e)
-    }
-  }
-  useEffect(() => { load() }, [])
+  useEffect(() => { loadContas() }, [loadContas])
 
   async function handleTransfer(e) {
     e.preventDefault()
     if (!origem || !destino || !valor) return alert('Preencha todos os campos')
     try {
-      const payload = { origemId: Number(origem), destinoId: Number(destino), valor: parseFloat(valor) }
-      const t = await apiPost('/api/transacoes', payload)
-      alert('Transferência criada: ' + (t.id ?? t))
+      const payload = { 
+        contaOrigemId: Number(origem), 
+        contaDestinoId: Number(destino), 
+        valor: parseFloat(valor) 
+      }
+      const resultado = await apiPost('http://localhost:8080/api/transacoes/transferir', payload)
+      alert(resultado.mensagem || 'Transferência realizada com sucesso!')
+      setOrigem('')
+      setDestino('')
       setValor('')
-      load() // reload contas para atualizar saldos
+      loadContas()
     } catch (err) {
-      alert(err.message)
+      alert('Erro: ' + err.message)
     }
   }
 
@@ -37,13 +36,28 @@ export default function Transferencia() {
       <form onSubmit={handleTransfer} className="form">
         <select value={origem} onChange={e => setOrigem(e.target.value)} required>
           <option value="">Conta Origem</option>
-          {contas.map(c => <option key={c.id} value={c.id}>{c.numero ?? c.numeroConta} — R$ {c.saldo}</option>)}
+          {contas.map(c => (
+            <option key={c.id} value={c.id}>
+              {c.numeroConta} - {c.clienteNome} - R$ {c.saldo?.toFixed(2)}
+            </option>
+          ))}
         </select>
         <select value={destino} onChange={e => setDestino(e.target.value)} required>
           <option value="">Conta Destino</option>
-          {contas.map(c => <option key={c.id} value={c.id}>{c.numero ?? c.numeroConta} — R$ {c.saldo}</option>)}
+          {contas.map(c => (
+            <option key={c.id} value={c.id}>
+              {c.numeroConta} - {c.clienteNome}
+            </option>
+          ))}
         </select>
-        <input value={valor} onChange={e => setValor(e.target.value)} placeholder="Valor" required />
+        <input 
+          type="number" 
+          step="0.01" 
+          value={valor} 
+          onChange={e => setValor(e.target.value)} 
+          placeholder="Valor" 
+          required 
+        />
         <button type="submit">Transferir</button>
       </form>
     </div>
