@@ -1,6 +1,12 @@
 # Sistema Bancário Backend
 
+Alunos: Juliano Kenzo Watanabe Santana, Carlos Andre Scherer
+
+https://github.com/Capicheee/Sistema-Banc-rio.git
+
 Este projeto é uma aplicação backend para um sistema bancário desenvolvido em Spring Boot. O sistema permite a gestão de contas bancárias, clientes e transações.
+
+O frontend está na master branch, com sua respectiva documentação.
 
 ## Funcionalidades
 
@@ -84,15 +90,17 @@ cd sistema-bancario-backend
 
 2. Build e testes:
 mvn -U clean package
+
 mvn test
 
-(escolher entre 3 ou 4)
+(escolher entre 3 ou 4, preferível 3)
 
-3. Executar com banco H2
+3. Executar com banco H2:
 mvn -DskipTests spring-boot:run -Dspring-boot.run.arguments="--spring.profiles.active=dev"
 
 4. Gerar JAR e executar:
 mvn -DskipTests package
+
 java -jar target/sistema-bancario-backend-1.0-SNAPSHOT.jar --spring.profiles.active=dev
 
 - Para testes unitários e mocks, usamos JUnit Jupiter e Mockito.
