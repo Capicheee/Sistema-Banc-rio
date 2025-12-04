@@ -1,0 +1,34 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/sistema_bancario
+    username: seu_usuario
+    password: sua_senha
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.springframework: INFO
+    com.exemplo.banco: DEBUG
+
+# Configurações de segurança
+seguranca:
+  jwt:
+    segredo: seu_segredo_jwt
+    expiracao: 3600 # em segundos
+
+# Configurações do Swagger
+swagger:
+  habilitado: true
+  versao: 1.0.0
+  titulo: API do Sistema Bancário
+  descricao: Documentação da API para o sistema bancário.

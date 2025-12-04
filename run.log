@@ -1,0 +1,263 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------< [0;36mcom.exemplo:sistema-bancario-backend[0;1m >----------------[m
+[[1;34mINFO[m] [1mBuilding Sistema Bancário Backend 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mspring-boot-maven-plugin:2.7.13:run[m [1m(default-cli)[0;1m > [0;1mtest-compile[m @ [36msistema-bancario-backend[0;1m >>>[m
+[[1;33mWARNING[m] The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36msistema-bancario-backend[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36msistema-bancario-backend[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 25 source files to /home/juliano/Codes/sistema-bancario-backend/target/classes
+[[1;34mINFO[m] /home/juliano/Codes/sistema-bancario-backend/src/main/java/com/exemplo/banco/configuracao/ConfiguracaoSeguranca.java: /home/juliano/Codes/sistema-bancario-backend/src/main/java/com/exemplo/banco/configuracao/ConfiguracaoSeguranca.java uses or overrides a deprecated API.
+[[1;34mINFO[m] /home/juliano/Codes/sistema-bancario-backend/src/main/java/com/exemplo/banco/configuracao/ConfiguracaoSeguranca.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36msistema-bancario-backend[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/juliano/Codes/sistema-bancario-backend/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36msistema-bancario-backend[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 2 source files to /home/juliano/Codes/sistema-bancario-backend/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32mspring-boot-maven-plugin:2.7.13:run[m [1m(default-cli)[0;1m < [0;1mtest-compile[m @ [36msistema-bancario-backend[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:2.7.13:run[m [1m(default-cli)[m @ [36msistema-bancario-backend[0;1m ---[m
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.13)
+
+2025-12-01 20:32:35.411  INFO 62049 --- [           main] com.exemplo.banco.AplicacaoBanco         : Starting AplicacaoBanco using Java 21.0.9 on DESKTOP-N4APV8V with PID 62049 (/home/juliano/Codes/sistema-bancario-backend/target/classes started by juliano in /home/juliano/Codes/sistema-bancario-backend)
+2025-12-01 20:32:35.413 DEBUG 62049 --- [           main] com.exemplo.banco.AplicacaoBanco         : Running with Spring Boot v2.7.13, Spring v5.3.28
+2025-12-01 20:32:35.414  INFO 62049 --- [           main] com.exemplo.banco.AplicacaoBanco         : The following 1 profile is active: "dev"
+2025-12-01 20:32:36.479  INFO 62049 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-01 20:32:36.521  INFO 62049 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 3 JPA repository interfaces.
+2025-12-01 20:32:37.073  INFO 62049 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-12-01 20:32:37.081  INFO 62049 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-01 20:32:37.081  INFO 62049 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.76]
+2025-12-01 20:32:37.143  INFO 62049 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-01 20:32:37.143  INFO 62049 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1644 ms
+2025-12-01 20:32:37.343  INFO 62049 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-01 20:32:37.498  INFO 62049 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-01 20:32:37.541  WARN 62049 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #2 of URL [file:/home/juliano/Codes/sistema-bancario-backend/target/classes/data.sql]: INSERT INTO conta (numero_conta, saldo, tipo_conta, cliente_id) VALUES ('0001', 1000.00, 'CONTA_CORRENTE', 1), ('0002', 5000.00, 'CONTA_POUPANCA', 2); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO_CONTA" not found; SQL statement:
+INSERT INTO conta (numero_conta, saldo, tipo_conta, cliente_id) VALUES ('0001', 1000.00, 'CONTA_CORRENTE', 1), ('0002', 5000.00, 'CONTA_POUPANCA', 2) [42122-214]
+2025-12-01 20:32:37.542  INFO 62049 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-01 20:32:37.544  INFO 62049 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-01 20:32:37.546  INFO 62049 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-12-01 20:32:37.563  INFO 62049 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-12-01 20:32:37.583 ERROR 62049 --- [           main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #2 of URL [file:/home/juliano/Codes/sistema-bancario-backend/target/classes/data.sql]: INSERT INTO conta (numero_conta, saldo, tipo_conta, cliente_id) VALUES ('0001', 1000.00, 'CONTA_CORRENTE', 1), ('0002', 5000.00, 'CONTA_POUPANCA', 2); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO_CONTA" not found; SQL statement:
+INSERT INTO conta (numero_conta, saldo, tipo_conta, cliente_id) VALUES ('0001', 1000.00, 'CONTA_CORRENTE', 1), ('0002', 5000.00, 'CONTA_POUPANCA', 2) [42122-214]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.28.jar:5.3.28]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.28.jar:5.3.28]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.28.jar:5.3.28]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.28.jar:5.3.28]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.28.jar:5.3.28]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.28.jar:5.3.28]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.28.jar:5.3.28]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.28.jar:5.3.28]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.28.jar:5.3.28]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156) ~[spring-context-5.3.28.jar:5.3.28]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:910) ~[spring-context-5.3.28.jar:5.3.28]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.28.jar:5.3.28]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.13.jar:2.7.13]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.13.jar:2.7.13]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.13.jar:2.7.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.13.jar:2.7.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.13.jar:2.7.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.13.jar:2.7.13]
+	at com.exemplo.banco.AplicacaoBanco.main(AplicacaoBanco.java:9) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:571) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #2 of URL [file:/home/juliano/Codes/sistema-bancario-backend/target/classes/data.sql]: INSERT INTO conta (numero_conta, saldo, tipo_conta, cliente_id) VALUES ('0001', 1000.00, 'CONTA_CORRENTE', 1), ('0002', 5000.00, 'CONTA_POUPANCA', 2); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO_CONTA" not found; SQL statement:
+INSERT INTO conta (numero_conta, saldo, tipo_conta, cliente_id) VALUES ('0001', 1000.00, 'CONTA_CORRENTE', 1), ('0002', 5000.00, 'CONTA_POUPANCA', 2) [42122-214]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282) ~[spring-jdbc-5.3.28.jar:5.3.28]
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254) ~[spring-jdbc-5.3.28.jar:5.3.28]
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54) ~[spring-jdbc-5.3.28.jar:5.3.28]
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:90) ~[spring-boot-2.7.13.jar:2.7.13]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:145) ~[spring-boot-2.7.13.jar:2.7.13]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:107) ~[spring-boot-2.7.13.jar:2.7.13]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:101) ~[spring-boot-2.7.13.jar:2.7.13]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76) ~[spring-boot-2.7.13.jar:2.7.13]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:65) ~[spring-boot-2.7.13.jar:2.7.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.28.jar:5.3.28]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.28.jar:5.3.28]
+	... 22 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO_CONTA" not found; SQL statement:
+INSERT INTO conta (numero_conta, saldo, tipo_conta, cliente_id) VALUES ('0001', 1000.00, 'CONTA_CORRENTE', 1), ('0002', 5000.00, 'CONTA_POUPANCA', 2) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.table.Table.getColumn(Table.java:749) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.parseColumn(Parser.java:1256) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.parseInsert(Parser.java:1641) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.parsePrepared(Parser.java:814) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.parse(Parser.java:689) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.parse(Parser.java:661) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Parser.prepareCommand(Parser.java:569) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223) ~[h2-2.1.214.jar:2.1.214]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261) ~[spring-jdbc-5.3.28.jar:5.3.28]
+	... 32 common frames omitted
+
+[[1;33mWARNING[m] 
+[1;31mjava.lang.reflect.InvocationTargetException[m
+    [1mat[m jdk.internal.reflect.DirectMethodHandleAccessor.invoke ([1mDirectMethodHandleAccessor.java:118[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:580[m)
+    [1mat[m org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run ([1mAbstractRunMojo.java:571[m)
+    [1mat[m java.lang.Thread.run ([1mThread.java:1583[m)
+[1mCaused by[m: org.springframework.beans.factory.BeanCreationException: [1;31mError creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #2 of URL [file:/home/juliano/Codes/sistema-bancario-backend/target/classes/data.sql]: INSERT INTO conta (numero_conta, saldo, tipo_conta, cliente_id) VALUES ('0001', 1000.00, 'CONTA_CORRENTE', 1), ('0002', 5000.00, 'CONTA_POUPANCA', 2); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO_CONTA" not found; SQL statement:
+INSERT INTO conta (numero_conta, saldo, tipo_conta, cliente_id) VALUES ('0001', 1000.00, 'CONTA_CORRENTE', 1), ('0002', 5000.00, 'CONTA_POUPANCA', 2) [42122-214][m
+    [1mat[m org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean ([1mAbstractAutowireCapableBeanFactory.java:1804[m)
+    [1mat[m org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean ([1mAbstractAutowireCapableBeanFactory.java:620[m)
+    [1mat[m org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean ([1mAbstractAutowireCapableBeanFactory.java:542[m)
+    [1mat[m org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0 ([1mAbstractBeanFactory.java:335[m)
+    [1mat[m org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton ([1mDefaultSingletonBeanRegistry.java:234[m)
+    [1mat[m org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean ([1mAbstractBeanFactory.java:333[m)
+    [1mat[m org.springframework.beans.factory.support.AbstractBeanFactory.getBean ([1mAbstractBeanFactory.java:208[m)
+    [1mat[m org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean ([1mAbstractBeanFactory.java:322[m)
+    [1mat[m org.springframework.beans.factory.support.AbstractBeanFactory.getBean ([1mAbstractBeanFactory.java:208[m)
+    [1mat[m org.springframework.context.support.AbstractApplicationContext.getBean ([1mAbstractApplicationContext.java:1156[m)
+    [1mat[m org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization ([1mAbstractApplicationContext.java:910[m)
+    [1mat[m org.springframework.context.support.AbstractApplicationContext.refresh ([1mAbstractApplicationContext.java:583[m)
+    [1mat[m org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh ([1mServletWebServerApplicationContext.java:147[m)
+    [1mat[m org.springframework.boot.SpringApplication.refresh ([1mSpringApplication.java:731[m)
+    [1mat[m org.springframework.boot.SpringApplication.refreshContext ([1mSpringApplication.java:408[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:307[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:1303[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:1292[m)
+    [1mat[m com.exemplo.banco.AplicacaoBanco.main ([1mAplicacaoBanco.java:9[m)
+    [1mat[m jdk.internal.reflect.DirectMethodHandleAccessor.invoke ([1mDirectMethodHandleAccessor.java:103[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:580[m)
+    [1mat[m org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run ([1mAbstractRunMojo.java:571[m)
+    [1mat[m java.lang.Thread.run ([1mThread.java:1583[m)
+[1mCaused by[m: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: [1;31mFailed to execute SQL script statement #2 of URL [file:/home/juliano/Codes/sistema-bancario-backend/target/classes/data.sql]: INSERT INTO conta (numero_conta, saldo, tipo_conta, cliente_id) VALUES ('0001', 1000.00, 'CONTA_CORRENTE', 1), ('0002', 5000.00, 'CONTA_POUPANCA', 2); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO_CONTA" not found; SQL statement:
+INSERT INTO conta (numero_conta, saldo, tipo_conta, cliente_id) VALUES ('0001', 1000.00, 'CONTA_CORRENTE', 1), ('0002', 5000.00, 'CONTA_POUPANCA', 2) [42122-214][m
+    [1mat[m org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript ([1mScriptUtils.java:282[m)
+    [1mat[m org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate ([1mResourceDatabasePopulator.java:254[m)
+    [1mat[m org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute ([1mDatabasePopulatorUtils.java:54[m)
+    [1mat[m org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts ([1mDataSourceScriptDatabaseInitializer.java:90[m)
+    [1mat[m org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts ([1mAbstractScriptDatabaseInitializer.java:145[m)
+    [1mat[m org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts ([1mAbstractScriptDatabaseInitializer.java:107[m)
+    [1mat[m org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts ([1mAbstractScriptDatabaseInitializer.java:101[m)
+    [1mat[m org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase ([1mAbstractScriptDatabaseInitializer.java:76[m)
+    [1mat[m org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet ([1mAbstractScriptDatabaseInitializer.java:65[m)
+    [1mat[m org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods ([1mAbstractAutowireCapableBeanFactory.java:1863[m)
+    [1mat[m org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean ([1mAbstractAutowireCapableBeanFactory.java:1800[m)
+    [1mat[m org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean ([1mAbstractAutowireCapableBeanFactory.java:620[m)
+    [1mat[m org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean ([1mAbstractAutowireCapableBeanFactory.java:542[m)
+    [1mat[m org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0 ([1mAbstractBeanFactory.java:335[m)
+    [1mat[m org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton ([1mDefaultSingletonBeanRegistry.java:234[m)
+    [1mat[m org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean ([1mAbstractBeanFactory.java:333[m)
+    [1mat[m org.springframework.beans.factory.support.AbstractBeanFactory.getBean ([1mAbstractBeanFactory.java:208[m)
+    [1mat[m org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean ([1mAbstractBeanFactory.java:322[m)
+    [1mat[m org.springframework.beans.factory.support.AbstractBeanFactory.getBean ([1mAbstractBeanFactory.java:208[m)
+    [1mat[m org.springframework.context.support.AbstractApplicationContext.getBean ([1mAbstractApplicationContext.java:1156[m)
+    [1mat[m org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization ([1mAbstractApplicationContext.java:910[m)
+    [1mat[m org.springframework.context.support.AbstractApplicationContext.refresh ([1mAbstractApplicationContext.java:583[m)
+    [1mat[m org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh ([1mServletWebServerApplicationContext.java:147[m)
+    [1mat[m org.springframework.boot.SpringApplication.refresh ([1mSpringApplication.java:731[m)
+    [1mat[m org.springframework.boot.SpringApplication.refreshContext ([1mSpringApplication.java:408[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:307[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:1303[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:1292[m)
+    [1mat[m com.exemplo.banco.AplicacaoBanco.main ([1mAplicacaoBanco.java:9[m)
+    [1mat[m jdk.internal.reflect.DirectMethodHandleAccessor.invoke ([1mDirectMethodHandleAccessor.java:103[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:580[m)
+    [1mat[m org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run ([1mAbstractRunMojo.java:571[m)
+    [1mat[m java.lang.Thread.run ([1mThread.java:1583[m)
+[1mCaused by[m: org.h2.jdbc.JdbcSQLSyntaxErrorException: [1;31mColumn "TIPO_CONTA" not found; SQL statement:
+INSERT INTO conta (numero_conta, saldo, tipo_conta, cliente_id) VALUES ('0001', 1000.00, 'CONTA_CORRENTE', 1), ('0002', 5000.00, 'CONTA_POUPANCA', 2) [42122-214][m
+    [1mat[m org.h2.message.DbException.getJdbcSQLException ([1mDbException.java:502[m)
+    [1mat[m org.h2.message.DbException.getJdbcSQLException ([1mDbException.java:477[m)
+    [1mat[m org.h2.message.DbException.get ([1mDbException.java:223[m)
+    [1mat[m org.h2.message.DbException.get ([1mDbException.java:199[m)
+    [1mat[m org.h2.table.Table.getColumn ([1mTable.java:749[m)
+    [1mat[m org.h2.command.Parser.parseColumn ([1mParser.java:1256[m)
+    [1mat[m org.h2.command.Parser.parseColumnList ([1mParser.java:1241[m)
+    [1mat[m org.h2.command.Parser.parseInsert ([1mParser.java:1641[m)
+    [1mat[m org.h2.command.Parser.parsePrepared ([1mParser.java:814[m)
+    [1mat[m org.h2.command.Parser.parse ([1mParser.java:689[m)
+    [1mat[m org.h2.command.Parser.parse ([1mParser.java:661[m)
+    [1mat[m org.h2.command.Parser.prepareCommand ([1mParser.java:569[m)
+    [1mat[m org.h2.engine.SessionLocal.prepareLocal ([1mSessionLocal.java:631[m)
+    [1mat[m org.h2.engine.SessionLocal.prepareCommand ([1mSessionLocal.java:554[m)
+    [1mat[m org.h2.jdbc.JdbcConnection.prepareCommand ([1mJdbcConnection.java:1116[m)
+    [1mat[m org.h2.jdbc.JdbcStatement.executeInternal ([1mJdbcStatement.java:237[m)
+    [1mat[m org.h2.jdbc.JdbcStatement.execute ([1mJdbcStatement.java:223[m)
+    [1mat[m com.zaxxer.hikari.pool.ProxyStatement.execute ([1mProxyStatement.java:94[m)
+    [1mat[m com.zaxxer.hikari.pool.HikariProxyStatement.execute ([1mHikariProxyStatement.java[m)
+    [1mat[m org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript ([1mScriptUtils.java:261[m)
+    [1mat[m org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate ([1mResourceDatabasePopulator.java:254[m)
+    [1mat[m org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute ([1mDatabasePopulatorUtils.java:54[m)
+    [1mat[m org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts ([1mDataSourceScriptDatabaseInitializer.java:90[m)
+    [1mat[m org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts ([1mAbstractScriptDatabaseInitializer.java:145[m)
+    [1mat[m org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts ([1mAbstractScriptDatabaseInitializer.java:107[m)
+    [1mat[m org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts ([1mAbstractScriptDatabaseInitializer.java:101[m)
+    [1mat[m org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase ([1mAbstractScriptDatabaseInitializer.java:76[m)
+    [1mat[m org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet ([1mAbstractScriptDatabaseInitializer.java:65[m)
+    [1mat[m org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods ([1mAbstractAutowireCapableBeanFactory.java:1863[m)
+    [1mat[m org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean ([1mAbstractAutowireCapableBeanFactory.java:1800[m)
+    [1mat[m org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean ([1mAbstractAutowireCapableBeanFactory.java:620[m)
+    [1mat[m org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean ([1mAbstractAutowireCapableBeanFactory.java:542[m)
+    [1mat[m org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0 ([1mAbstractBeanFactory.java:335[m)
+    [1mat[m org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton ([1mDefaultSingletonBeanRegistry.java:234[m)
+    [1mat[m org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean ([1mAbstractBeanFactory.java:333[m)
+    [1mat[m org.springframework.beans.factory.support.AbstractBeanFactory.getBean ([1mAbstractBeanFactory.java:208[m)
+    [1mat[m org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean ([1mAbstractBeanFactory.java:322[m)
+    [1mat[m org.springframework.beans.factory.support.AbstractBeanFactory.getBean ([1mAbstractBeanFactory.java:208[m)
+    [1mat[m org.springframework.context.support.AbstractApplicationContext.getBean ([1mAbstractApplicationContext.java:1156[m)
+    [1mat[m org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization ([1mAbstractApplicationContext.java:910[m)
+    [1mat[m org.springframework.context.support.AbstractApplicationContext.refresh ([1mAbstractApplicationContext.java:583[m)
+    [1mat[m org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh ([1mServletWebServerApplicationContext.java:147[m)
+    [1mat[m org.springframework.boot.SpringApplication.refresh ([1mSpringApplication.java:731[m)
+    [1mat[m org.springframework.boot.SpringApplication.refreshContext ([1mSpringApplication.java:408[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:307[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:1303[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:1292[m)
+    [1mat[m com.exemplo.banco.AplicacaoBanco.main ([1mAplicacaoBanco.java:9[m)
+    [1mat[m jdk.internal.reflect.DirectMethodHandleAccessor.invoke ([1mDirectMethodHandleAccessor.java:103[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:580[m)
+    [1mat[m org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run ([1mAbstractRunMojo.java:571[m)
+    [1mat[m java.lang.Thread.run ([1mThread.java:1583[m)
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  4.926 s
+[[1;34mINFO[m] Finished at: 2025-12-01T20:32:37-03:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.springframework.boot:spring-boot-maven-plugin:2.7.13:run[m [1m(default-cli)[m on project [36msistema-bancario-backend[m: [1;31mAn exception occurred while running. null[m: InvocationTargetException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #2 of URL [file:/home/juliano/Codes/sistema-bancario-backend/target/classes/data.sql]: INSERT INTO conta (numero_conta, saldo, tipo_conta, cliente_id) VALUES ('0001', 1000.00, 'CONTA_CORRENTE', 1), ('0002', 5000.00, 'CONTA_POUPANCA', 2); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO_CONTA" not found; SQL statement:
+[[1;31mERROR[m] INSERT INTO conta (numero_conta, saldo, tipo_conta, cliente_id) VALUES ('0001', 1000.00, 'CONTA_CORRENTE', 1), ('0002', 5000.00, 'CONTA_POUPANCA', 2) [42122-214]
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
